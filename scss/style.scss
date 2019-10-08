@@ -1,0 +1,449 @@
+@import "fonts";
+@import "mixins";
+@import "variables";
+
+
+
+html,
+body {
+    //height: 100%;
+    font-size: 15px;
+
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+}
+
+p {
+    margin: 0 0 .5em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    //padding-top: 120px;
+}
+
+.container {
+    position: relative;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+
+.page {
+    min-height: 100vh;
+    position: relative;
+    //    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.liquids {
+
+        .red__btn {
+            padding: 19px 48px;
+            font-family: 'proximaNova', sans-serif;
+            background: linear-gradient(to bottom, #ff713f 0%, #fa3c3a 100%);
+            position: relative;
+            z-index: 4;
+
+
+            &:hover {
+                text-decoration: none;
+                background: linear-gradient(to bottom, #ff845d 0%, #fe504f 100%);
+
+                //                &:after {
+                //                    display: none;
+                //                }
+            }
+
+            &:active {
+                background: linear-gradient(to bottom, #fe5d28 0%, #fc3429 100%);
+            }
+
+
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: 0;
+                height: 40px;
+                box-shadow: 0 17px 50px $red;
+                z-index: -1;
+            }
+
+            span {
+                display: block;
+                font-weight: 400;
+            }
+
+            &--products {
+                text-transform: none;
+            }
+        }
+    }
+}
+
+
+
+.mask {
+    position: fixed;
+    height: 100%;
+    background-color: rgba(43, 46, 56, 0.9);
+    z-index: 199;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+.red__btn {
+    padding: 24px 50px;
+    font-family: 'proximaNova', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $white;
+    border: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #ff8858 0%, #fd5023 100%);
+    z-index: 4;
+
+    display: inline-block;
+    border-bottom: 5px solid #e12521;
+
+    &:hover {
+        text-decoration: none;
+        background: linear-gradient(to bottom, #ffa37e 0%, #ff542e 100%);
+    }
+
+    &:active {
+        background: linear-gradient(to bottom, #f3784a 0%, #ed3d11 100%);
+    }
+
+
+    &--products {
+        padding: 10px 40px;
+        font-family: 'proximaNova', sans-serif;
+        position: relative;
+        z-index: 2;
+        background: linear-gradient(180deg, #ff713f 0, #fa3c3a);
+        text-transform: none;
+
+        &:hover {
+            text-decoration: none;
+            background: linear-gradient(to bottom, #ff845d 0%, #fe504f 100%);
+        }
+
+        &:active {
+            background: linear-gradient(to bottom, #fe5d28 0%, #fc3429 100%);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            bottom: 0;
+            height: 40px;
+            box-shadow: 0 17px 50px $red;
+            z-index: -1;
+        }
+
+        span {
+            display: block;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+.products__page {
+    background-color: #fefefe;
+    padding-bottom: 50px;
+}
+
+.slick__arrow-block {
+    position: absolute;
+    top: 140px;
+    right: 0;
+}
+
+.slider__arrows {
+    display: flex;
+    margin-bottom: 15px;
+
+    button {
+        height: 45px;
+        width: 50px;
+        border: 0;
+        outline: 0;
+        display: block;
+        background: linear-gradient(to bottom, #ff8858 0%, #fd5023 100%);
+        position: relative;
+        cursor: pointer;
+
+        //        &.slick-disabled {
+        //            background-color: #eeeeee;
+        //        }
+
+        //        &:after {
+        //            background: url(#{$img}arrow.png);
+        //            content: '';
+        //            position: absolute;
+        //        }
+
+        &.prev {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background: #eeeeee;
+        }
+
+        &.next {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+}
+
+.popup__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .64);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    overflow-y: auto;
+    max-height: 100%;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.popup__content {
+    max-width: 505px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $white;
+
+    padding: 80px 0 60px;
+    position: relative;
+
+    .title {
+        margin-bottom: 40px;
+        line-height: 1;
+        font-weight: 700;
+        font-size: 36px;
+        color: #000;
+        text-align: center;
+    }
+}
+
+.popup__form {
+    padding: 0 65px;
+
+    .red__btn {
+        font-weight: 600;
+        font-family: 'proximaNova', sans-serif;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        span {
+            display: block;
+            font-weight: 400;
+            text-transform: none;
+        }
+
+        img {
+            position: absolute;
+            top: 20px;
+            right: -50px;
+        }
+    }
+}
+
+.popup__ice {
+    position: absolute;
+    right: 10px;
+    bottom: 120px;
+}
+
+.label {
+    margin-bottom: 20px;
+    font-family: 'proximaNova', sans-serif;
+    display: block;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.input {
+    height: 70px;
+    padding: 0 25px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 18px;
+
+    &::placeholder {
+        font-weight: 400;
+        color: #b2b2b2;
+    }
+}
+
+.form__group {
+    margin-bottom: 30px;
+}
+
+.form__text {
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+    font-family: 'proximaNova', sans-serif;
+    color: #636363;
+    font-size: 18px;
+
+    a {
+        color: #636363;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.close__popup {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 30px);
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+.popup__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.slick__text {
+    font-size: 18px;
+    color: #898989;
+    text-align: center;
+
+}
+
+/* Vendor libs
+
+==========================*/
+@import "vendor/slick";
+
+
+
+
+/* Import blocks
+==========================*/
+@import "blocks/grid";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/product";
+@import "blocks/products";
+@import "blocks/certificate";
+@import "blocks/footer";
+@import "blocks/content";
+
+/* Helpers (must be as last import to override rules when use)
+==========================*/
+@import "_helpers";
+
+
+
+
+
+
+
+
+@import "adaptive";

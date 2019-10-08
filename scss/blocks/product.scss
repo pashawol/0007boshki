@@ -1,0 +1,81 @@
+.product {
+    padding: 40px 0 30px;
+}
+
+.product__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__img {
+    position: relative;
+
+    img {
+        max-width: 580px;
+        margin-left: -50px;
+    }
+}
+
+
+.product__badge {
+    position: absolute;
+    padding: 17px 20px;
+    left: 30px;
+    top: 120px;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    line-height: 1;
+    background: linear-gradient(to bottom, #97c547 0%, #97c547 27%, #6eb143 100%);
+}
+
+
+.product__info {
+    padding: 30px 70px 0 115px;
+    background: url(#{$img}voodo-lab.png) no-repeat;
+    background-size: cover;
+
+    .title {
+        color: #0b1119;
+        text-transform: uppercase;
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+
+    .name {
+        font-family: Hacked;
+    }
+
+    .text {
+        font-size: 18px;
+        font-family: 'proximaNova', sans-serif;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        //        letter-spacing: 1px;
+    }
+
+    .product__info-list {
+        margin-bottom: 30px;
+
+        li {
+            font-family: 'proximaNova', sans-serif;
+            color: #000;
+            font-size: 16px;
+            text-transform: none;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+
+    .red__btn {
+        font-size: 16px;
+    }
+}
+
+.product__info-title {
+    font-family: 'proximaNova', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}

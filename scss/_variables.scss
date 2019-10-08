@@ -1,0 +1,90 @@
+/* 1. Settings
+=========================*/
+$img: "../../img/";
+
+
+/* 2. Font family
+=========================*/
+$tahoma: Tahoma,
+sans-serif;
+$pt_sans: 'PT Sans',
+sans-serif;
+$raleway: 'Raleway',
+sans-serif;
+$roboto_c: 'Roboto Condensed',
+sans-serif;
+$roboto : 'Roboto',
+sans-serif;
+$ubuntu: 'Ubuntu',
+sans-serif;
+$openSans: 'Open Sans',
+sans-serif;
+$openSans_c: 'Open Sans Condensed',
+sans-serif;
+$montserat: 'Montserrat',
+sans-serif;
+$jura: 'Jura',
+sans-serif;
+
+$lora: 'Lora',
+serif;
+
+
+
+
+/* 3. Font sizes
+=========================*/
+$regular_font_size: 15px;
+$title_font_size: 2em;
+
+
+
+
+/* 4. Colors
+=========================*/
+$black: #464646;
+$white: #fff;
+$real-black: #000;
+$dark: #1e1e1e;
+$gray: #9e9e9e;
+$light-gray: #efefef;
+$blue-gray: #3B394C;
+$red: #ff5b2e;
+$pink: #e6535a;
+$purple: #ab47bc;
+$deep-purple: #673ab7;
+$indigo: #3f51b5;
+$blue: #2C567E;
+$light-blue: #03a9f4;
+$cyan: #00acc1;
+$teal: #009688;
+$green: #6eb143;
+$light-green: #a4bf9c;
+$lime: #cddc39;
+$yellow: #fbc02d;
+$amber: #ff9b17;
+$orange: #f9a63a;
+$deep-orange: #ef7604;
+$brown: #795548;
+$dark-blue:#130D21;
+
+$colors: //(gray $gray)
+//(dark-blue $dark-blue)
+(red $red) (rblack $real-black) (white $white) (dark $dark) //(pink $pink)
+//(purple $purple)
+//(deep-purple $deep-purple)
+//(indigo $indigo)
+//(blue $blue)
+//(light-blue $light-blue)
+//(cyan $cyan)
+//(teal $teal)
+//(green $green)
+//        (light-green $light-green)
+//(lime $lime)
+//(yellow $yellow)h
+//        (amber $amber)
+(orange $orange) //(deep-orange $deep-orange)
+(blue-gray $blue-gray) //(brown $brown)
+(black $black) (dark-blue $dark-blue);
+
+$block-margin: 20px 0;

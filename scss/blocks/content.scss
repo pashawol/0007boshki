@@ -1,0 +1,49 @@
+.company__wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.company__block {
+    max-width: 420px;
+    padding-left: 30px;
+    margin-top: -100px;
+}
+
+.company__img {
+    margin-top: -60px;
+    margin-left: -40px;
+    max-width: 100%;
+}
+
+.company__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.company__text {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'ProximaNova', sans-serif;
+    margin-bottom: 15px;
+    line-height: 26px;
+    color: #0b1119;
+
+    &:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+.company__badge {
+    max-width: 135px;
+    color: $white;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: $green;
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    text-align: center;
+}

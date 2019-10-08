@@ -1,0 +1,45 @@
+{
+  "name": "realui",
+  "version": "1.0.0",
+  "description": "Gulp for projects",
+  "author": "Alex Vasilevsky",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-cssbeautify": "^1.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^8.1.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-sftp": "^0.1.5",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-version-append": "^0.2.0",
+    "gulp-watch": "^5.0.1",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "engines": {
+    "node": "8.11.3"
+  },
+  "dependencies": {
+    "bower": "^1.8.4",
+    "chartjs-plugin-datalabels": "^0.4.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "webpack": "^4.26.0",
+    "yuicompressor": "^2.4.8"
+  }
+}
