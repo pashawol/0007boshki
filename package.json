@@ -39,7 +39,7 @@
     "gulp-cached": "^1.1.1",
     "gulp-jshint": "^2.1.0",
     "gulp-sourcemaps": "^2.6.4",
-    "webpack": "^4.26.0",
+    "webpack": "^5.75.0",
     "yuicompressor": "^2.4.8"
   }
 }
